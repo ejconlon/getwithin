@@ -1,10 +1,14 @@
 # Django settings for rock project.
 
+import os
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Eric Conlon', 'ejconlon@gmail.om'),
 )
 
 MANAGERS = ADMINS
@@ -67,6 +71,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    PROJECT_ROOT+'/bootstrap'
 )
 
 # List of finder classes that know how to find static files in
@@ -152,4 +157,6 @@ LOGGING = {
 
 import dj_database_url
 DATABASES = {}
-DATABASES['default'] =  dj_database_url.config(default="sqlite:////Users/charolastra/code/rock/db.sqlite")
+path = "sqlite:///"+PROJECT_ROOT+"/db.sqlite"
+DATABASES['default'] =  dj_database_url.config(default=path)
+
