@@ -167,7 +167,7 @@ from django.contrib import messages
 MESSAGE_TAGS = {
   messages.DEBUG: 'info',
   messages.INFO: 'info',
-  messages.SUCCESS: 'success',
+  messages.SUCCESS: 'info',
   messages.WARNING: 'info',
   messages.ERROR: 'error',
 }
