@@ -1,7 +1,7 @@
 from helpers import *
 
 def index_view(request):
-    return Responder(request, 'layout.html', 'Home').response()
+    return Responder(request, 'landing.html', 'Home', 'Are you...').response()
 
 login_view = FormHandler(LoginForm, 'login.html', 'Login', 'Successfully logged in.', 'Failed to log in.', '/').responder()
 signup_view = FormHandler(SignupForm, 'signup.html', 'Signup', 'Successfully signed up.', 'Failed to sign up.', '/').responder()

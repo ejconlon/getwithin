@@ -21,8 +21,11 @@ def base_context_dict(user):
     navlinks.append(('Login', '/login', False))
   return {'title': 'GetWithin', 'name': 'GetWithin', 'navlinks': navlinks}
 
-def set_current(d, name):
-  d['header'] = name
+def set_current(d, name, header):
+  if header is None:
+    d['header'] = name
+  else:
+    d['header'] = header 
   l = d['navlinks']
   for i in xrange(len(l)):
     if l[i][0].startswith(name):
@@ -53,13 +56,14 @@ class FormHandler(object):
     return func
 
 class Responder(object):
-  def __init__(self, request, templatefile, name):
+  def __init__(self, request, templatefile, name, header=None):
     self.request = request
     self.templatefile = templatefile
     self.name = name
+    self.header = header
     self.t = get_template(templatefile)
     self.d = base_context_dict(request.user)
-    set_current(self.d, name)
+    set_current(self.d, name, header)
   def html(self):
     self.add('messages', messages.get_messages(self.request))
     return self.t.render(Context(self.d))
