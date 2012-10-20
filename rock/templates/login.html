@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form action="/login" method="POST">
+  {{ form.as_p }}
+  <p><input type="submit" value="Login" /></p>
+</form>
+
+{% endblock %}

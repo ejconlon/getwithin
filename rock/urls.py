@@ -7,6 +7,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'rock.views.index', name='index'),
+    url(r'^login$', 'rock.views.login_view', name='login'),
+    url(r'^logout$', 'rock.views.logout_view', name='logout'),
     # url(r'^rock/', include('rock.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
