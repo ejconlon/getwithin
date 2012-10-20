@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">{{ name }}</a>
+          <a class="brand" href="/">{{ name }}</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               {% for navname, navlink, isactive in navlinks %}
@@ -56,6 +56,18 @@
     </div>
 
     <div class="container">
+
+      {% if messages %}
+      <ul class="messages">
+          {% for message in messages %}
+            {% if message.tags %}
+              <li class="alert-{{ message.tags }}">{{ message }}</li>
+            {% else %}
+              <li class="alert-info">{{ message }}</li>
+            {% endif %}
+          {% endfor %}
+      </ul>
+      {% endif %}
 
       <h1>{{ header }}</h1>
 

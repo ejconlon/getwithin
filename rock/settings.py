@@ -163,3 +163,12 @@ DATABASES = {}
 path = "sqlite:///"+PROJECT_ROOT+"/db.sqlite"
 DATABASES['default'] =  dj_database_url.config(default=path)
 
+from django.contrib import messages
+MESSAGE_TAGS = {
+  messages.DEBUG: 'info',
+  messages.INFO: 'info',
+  messages.SUCCESS: 'success',
+  messages.WARNING: 'info',
+  messages.ERROR: 'error',
+}
+
