@@ -5,15 +5,16 @@ from django.template import Context
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.models import User
 
 def base_context_dict(user):
   navlinks = []
   navlinks.append(('Home', '/', False))
   if user is not None and user.is_authenticated():
     #navlinks.append(('Account', '/account', False))
-    navlinks.append(('Logout', '/logout', False))
+    navlinks.append(('Logout '+user.username, '/logout', False))
   else:
-    #navlinks.append(('Signup', '/signup', False))
+    navlinks.append(('Signup', '/signup', False))
     navlinks.append(('Login', '/login', False))
   return {'title': 'GetWithin', 'name': 'GetWithin', 'navlinks': navlinks}
 
@@ -21,7 +22,7 @@ def set_current(d, name):
   d['header'] = name
   l = d['navlinks']
   for i in xrange(len(l)):
-    if l[i][0] == name:
+    if l[i][0].startswith(name):
       l[i] = (l[i][0], l[i][1], True)
       break
 
@@ -43,7 +44,7 @@ class Responder(object):
     return HttpResponse(self.html())
 
 class LoginForm(forms.Form):
-  username = forms.CharField(label=_('Username'))
+  email = forms.CharField(label=_('Email'))
   password = forms.CharField(label=_('Password'), widget=forms.PasswordInput)        
   user = None   # allow access to user object     
 
@@ -51,8 +52,7 @@ class LoginForm(forms.Form):
     # only do further checks if the rest was valid
     if self._errors: return
 
-    user = authenticate(username=self.data['username'],
-    password = self.data['password'])
+    user = authenticate(username=self.data['email'], password = self.data['password'])
     if user is not None:
       if user.is_active:
         self.user = user                    
@@ -65,8 +65,36 @@ class LoginForm(forms.Form):
         'The username and password you specified are not valid.'))
     return self.cleaned_data
 
-  def login(self, request):
+  def fill(self, request):
     if self.is_valid():
       login(request, self.user)
       return True
     return False
+
+class SignupForm(forms.Form):
+  email = forms.CharField(label=_('Email'))
+  password = forms.CharField(label=_('Password'), widget=forms.PasswordInput)        
+
+  def is_present(self, name):
+    return len(self.data[name]) > 0
+
+  def clean(self):
+    if self._errors: return
+    if not self.is_present('email') or not self.is_present('password'):
+      print self.is_present('email')
+      print self.is_present('passwrod')
+      raise forms.ValidationError(ugettext('Please fill in all fields.'))
+    elif len(User.objects.filter(username=self.data['email'])) > 0:
+      raise forms.ValidationError(ugettext('That email has already been registered.'))
+    else:
+      return self.cleaned_data
+
+  def fill(self, request):
+    if self.is_valid():
+      User.objects.create_user(self.data['email'], self.data['email'], self.data['password'])
+      user = authenticate(username=self.data['email'], password = self.data['password'])
+      login(request, user)
+      return True
+    return False
+
+
