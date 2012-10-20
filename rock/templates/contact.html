@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<br/>
+<p> Send us some feedback! Be sure to leave your email or phone number so we can get back to you. Thanks! </p>
+<br/>
+
+<form action="/contact" method="POST">
+  <p><label for="id_title">Subject:</label> <input type="text" name="title" id="id_title" /></p>
+  <p><label for="id_body">Message:</label> <textarea name="body" id="id_body"></textarea></p>
+  <p><input type="submit" value="Send" /></p>
+</form>
+
+{% endblock %}
