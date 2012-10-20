@@ -1,36 +1,86 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<ul>
-  <li>
-  <h2>Going through a life transition?</h2>
-  <ul>
-    <li>Marriage</li>
-    <li>Surgery</li>
-    <li>Pregnancy</li>
-    <li>Menopause</li>
-    <li>Divorce</li>
-  </ul>
-  </li>
-  <li>
-  <h2>Turning a landmark age?</h2>
-  <ul>
-    <li>30</li>
-    <li>40</li>
-    <li>45</li>
-    <li>50</li>
-    <li>60</li>
-  </ul>
-  </li>
-  <li>
-  <h2>Just stoked about being alive and want to level up your vibrancy?</h2>
-  <ul>
-    <li>Like to challenge yourself</li>
-    <li>Marathon Runner</li>
-    <li>Tri-athalete</li>
-    <li>Just plain excited about being your best!</li>
-  </ul>
-  </li>
-</ul>
+<div class="jumbotron floaty">
+  <h1> Get Within </h1>
+  <p><a href="/search" class="btn btn-large">Improve yourself within your community!</a></p>
+</div>
+
+<div id="landingcarousel" class="carousel slide floaty">
+  <div class="carousel-inner">
+    <div class="active item">
+      <h1> Are you... </h1>
+      <ul>
+        <li>
+        <h2>Going through a life transition?</h2>
+        <ul>
+          <li>Marriage</li>
+          <li>Surgery</li>
+          <li>Pregnancy</li>
+          <li>Menopause</li>
+          <li>Divorce</li>
+        </ul>
+        </li>
+        <li>
+        <h2>Turning a landmark age?</h2>
+        <ul>
+          <li>30</li>
+          <li>40</li>
+          <li>45</li>
+          <li>50</li>
+          <li>60</li>
+          <li>...ageless!</a>
+        </ul>
+        </li>
+        <li>
+        <h2>Just stoked about being alive and want to level up your vibrancy?</h2>
+        <ul>
+          <li>Like to challenge yourself</li>
+          <li>Marathon Runner</li>
+          <li>Tri-athalete</li>
+          <li>Just plain excited about being your best!</li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h2>Join a community of vibrant health enthusiasts!</h2>
+      <h3>How does it work?</h3>
+      <p>People meet, are assigned Personal Coaches that help guide them to achieve wellness goals within the designated areas of Nutrition, Physical Wellness, and Spiritual Balance.</p>
+      <p>They self-select from a Cornucopia of <strong>local</strong> services, classes, workshops, treatments, events they want to attend and experience the magic of <strong>transformation</strong> together.</p>
+      <p>They form support groups and activity buddies along the way to better living.</p>
+    </div>
+
+    <div class="item">
+      <p>Your personal Coach will help you outline your goals in the different fields of health creation.</p>
+      <p>They will begin with starting a health journal with your nutritional goals.</p>
+      <h2>Nutritional goals:</h2>
+      <ul>
+        <li>I want to feel more energy all day long.</li>
+        <li>I want to cut down my coffee/fried foods/ and meat consumption.</li>
+        <li>I want to know of good alternatives to coffee and meat without losing focus or craving for protein.</li>
+        <li>Always wanted to know about my food allergies / sensitivities?</li>
+      </ul>
+      <h2>Options in your local area:</h2>
+      <ul>
+        <li>Professional nutritional consultation</li>
+        <li>Cooking classes</li>
+        <li>Aryuveda</li>
+        <li>Raw foods classes</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <a class="carousel-control left" href="#landingcarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#landingcarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<div id="tryme" class="floaty">
+  <p>
+    <a href="/search" class="btn btn-primary btn-large">Try it now!</a>
+  </p>  
+</div>
 
 {% endblock %}

@@ -22,9 +22,7 @@ def base_context_dict(user):
   return {'title': 'GetWithin', 'name': 'GetWithin', 'navlinks': navlinks}
 
 def set_current(d, name, header):
-  if header is None:
-    d['header'] = name
-  else:
+  if header is not None:
     d['header'] = header 
   l = d['navlinks']
   for i in xrange(len(l)):
@@ -52,7 +50,7 @@ class FormHandler(object):
           messages.error(request, self.failure_msg)
       else:
         form = self.klass()
-      return Responder(request, self.templatefile, self.name).add('form', form).response()
+      return Responder(request, self.templatefile, self.name, self.name).add('form', form).response()
     return func
 
 class Responder(object):
