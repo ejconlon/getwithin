@@ -1048,11 +1048,111 @@
   fields:
     body: Age 60
     slug: age60
+- model: rock.tag
+  pk: 211
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 212
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 213
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 214
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 215
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 216
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 217
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 218
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 219
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 220
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 221
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 222
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 223
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 224
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 225
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 226
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 227
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 228
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 229
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 230
+  fields:
+    body: Age 60
+    slug: age60
 - model: rock.tagset
   pk: 1
   fields:
     highlighted: True
-    tags: [206, 207, 208, 209, 210, 6]
+    tags: [226, 227, 228, 229, 230, 6]
     slug: age
     title: Age
 - model: rock.tagset
@@ -1370,6 +1470,34 @@
     tags: [10, 12, 15, 13, 14, 16]
     slug: parentingclasses
     title: Parenting Classes
+- model: rock.tagset
+  pk: 47
+  fields:
+    highlighted: False
+    tags: [9, 12, 15, 13, 14, 16]
+    slug: actingclasses
+    title: Acting Classes
+- model: rock.tagset
+  pk: 48
+  fields:
+    highlighted: False
+    tags: [9, 12, 15, 13, 14, 16]
+    slug: ceramicsclasses
+    title: Ceramics Classes
+- model: rock.tagset
+  pk: 49
+  fields:
+    highlighted: False
+    tags: [9, 12, 15, 13, 14, 16]
+    slug: poetry
+    title: Poetry
+- model: rock.tagset
+  pk: 50
+  fields:
+    highlighted: False
+    tags: [9, 12, 15, 14, 16]
+    slug: welding
+    title: Welding
 - model: rock.activity
   pk: 1
   fields:
@@ -1664,6 +1792,34 @@
     slug: parentingclasses
     tag_set: 46
     title: Parenting Classes
+- model: rock.activity
+  pk: 43
+  fields:
+    body: Express yourself through theater.
+    slug: actingclasses
+    tag_set: 47
+    title: Acting Classes
+- model: rock.activity
+  pk: 44
+  fields:
+    body: Play with clay.
+    slug: ceramicsclasses
+    tag_set: 48
+    title: Ceramics Classes
+- model: rock.activity
+  pk: 45
+  fields:
+    body: Write poetry and share it with others.
+    slug: poetry
+    tag_set: 49
+    title: Poetry
+- model: rock.activity
+  pk: 46
+  fields:
+    body: Metal bending.
+    slug: welding
+    tag_set: 50
+    title: Welding
 - model: rock.event
   pk: 1
   fields:

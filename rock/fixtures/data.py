@@ -125,6 +125,14 @@ Relationship Communication Classes - spirituality, age 20-60, injury, anniversar
 Conflict Resolution Classes - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Dont just hide from confrontation learn how to effectively handle them.
 
 Parenting Classes - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Teach your children with love and compassion.
+
+Acting Classes - creativity, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Express yourself through theater.
+
+Ceramics Classes - creativity, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Play with clay.
+
+Poetry - creativity, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Write poetry and share it with others.
+
+Welding - creativity, age 20-60, injury, anniversary, menopause, under30 - Metal bending.
 """
 
 for snap in (snaps + snaps2 + snaps3).split('\n'):
