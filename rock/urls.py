@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^activity/(\w+)$', 'rock.views.activity_view', name='activity'),
     url(r'^join/(\w+)$', 'rock.views.join_view', name='join'),
     url(r'^leave/(\w+)$', 'rock.views.leave_view', name='leave'),
+    url(r'^calendar$', 'rock.views.calendar_view', name='calendar'),
     # url(r'^rock/', include('rock.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

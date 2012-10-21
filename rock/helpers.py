@@ -6,12 +6,18 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 from models import *
 import datetime
+
+def get_month_activities(month):
+  return Activity.objects.filter(slug='taichi')
 
 def base_context_dict(user):
   navlinks = []
   navlinks.append(('Home', '/', False))
+  navlinks.append(('Search', '/search', False))
+  navlinks.append(('Calendar', '/calendar', False))
   navlinks.append(('Contact', '/contact', False))
   if user is not None and user.is_authenticated():
     #navlinks.append(('Account', '/account', False))

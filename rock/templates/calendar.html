@@ -1,0 +1,249 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<p>Getting the "right" health and wellness information is an important step to helping you better manage your health. Each month, this section will highlight a new health challenge that you can take as a individual or get your family and friends involved too. Along with the challenge, there is also a list of other educational materials and resources that support the monthly health challenge. Make sure to check out the new "Healthy Tip Sheet" flyer.</p>
+
+<ul id="myTab" class="nav nav-tabs">
+  <li><a href="#jan" data-toggle="tab">Jan</a></li>
+  <li><a href="#feb" data-toggle="tab">Feb</a></li>
+  <li><a href="#mar" data-toggle="tab">Mar</a></li>
+  <li><a href="#apr" data-toggle="tab">Apr</a></li>
+  <li><a href="#may" data-toggle="tab">May</a></li>
+  <li><a href="#jun" data-toggle="tab">Jun</a></li>
+  <li><a href="#jul" data-toggle="tab">Jul</a></li>
+  <li><a href="#aug" data-toggle="tab">Aug</a></li>
+  <li><a href="#sep" data-toggle="tab">Sep</a></li>
+  <li><a href="#oct" data-toggle="tab">Oct</a></li>
+  <li><a href="#nov" data-toggle="tab">Nov</a></li>
+  <li><a href="#dec" data-toggle="tab">Dec</a></li>
+</ul>
+
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade in" id="jan">
+
+    <h2>January</h2><h3>&quot;Healthy Weight Month&quot;</h3><p>It&#39;s
+a new year, and like many of us, you may have weight loss on your list
+of resolutions. You can achieve weight loss beyond that first month or
+two by incorporating lifestyle changes. Take this month&#39;s health
+challenge, &quot;Lose Weight this Month,&quot; and get yourself started on a path
+to acheiving your resolution.</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Lose Weight this Month" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-LoseWeight.pdf" target="_blank">Lose Weight this Month</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Managing Weight Guide" href="http://www.bluehealthadvantagene.com/_docs/Shared/Brochures/Weight_LM_BCBSNE_101806.pdf" target="_blank">Managing Weight Guide</a></li>
+<li><a title="Healthy Tip Sheet" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20January.pdf" target="_blank">Healthy Tip Sheet</a></li></ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in janacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="feb">
+
+    <h2>February</h2>
+<h3>&quot;Take Care of Your Heart Month&quot;</h3><p>Make
+it a goal this month to show your heart some love. Take this month&#39;s
+health challenge, &quot;Lower Your Blood Pressure,&quot; and get started on loving
+and caring for your heart.</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Lower Your Blood Pressure" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-lowerBP.pdf" target="_blank">Lower Your Blood Pressure</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Understanding Blood Pressure Guide" href="http://www.bluehealthadvantagene.com/_docs/Shared/Brochures/BP_LM_BCBSNE_101806.pdf" target="_blank">Understanding Blood Pressure Guide</a></li>
+<li><a title="Healthy Tip Sheet" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20February.pdf" target="_blank">Healthy Tip Sheet</a></li></ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in febacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="mar">
+
+    <h2>March</h2>
+<h3>&quot;Healthy Eating Month&quot;</h3><p>Everyday
+we are surrounded by huge food portions and the task of making the
+healthy choice. Take this month&#39;s health challenge, &quot;Eat More Fruits and
+Vegetables,&quot; and challenge yourself to eat healthier.</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Eat More Fruits and Vegetables" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-FruitsVeggies.pdf" target="_blank">Eat More Fruits and Vegetables</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Five a Day for Better Health Brochure" href="http://www.bluehealthadvantagene.com/_docs/Shared/Brochures/19_Five_A_Day_101806.pdf" target="_blank">Five a Day for Better Health Brochure</a></li>
+<li><a title="Healthy Tip Sheet" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20March.pdf" target="_blank">Healthy Tip Sheet</a></li></ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in maracts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="apr">
+
+    <h2>April</h2><h3>&quot;Alcohol Awareness Month&quot;</h3><p>This
+month exists to draw attention to the many problems related to alcohol
+abuse. It also exists to get people in touch with resources that can
+help them. Take this month&#39;s health challenge, &quot;Limit or Avoid Alcohol,&quot;
+and challenge yourself and our loved ones to become more aware of
+alcohol abuse.</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Limit or Avoid Alcohol" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-Alcohol%281%29.pdf" target="_blank">Limit or Avoid Alcohol</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Drink Alcohol only in Moderation" href="http://healthfinder.gov/prevention/ViewTopic.aspx?topicId=16" target="_blank">Drink Alcohol only in Moderation</a></li>
+<li><a title="Healthy Tip Sheet" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20April.pdf" target="_blank">Healthy Tip Sheet</a></li></ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in apracts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="may">
+
+    <h2>May</h2><h3>&quot;Focus on Fitness Month&quot;</h3><p>The
+American College of Sports Medicine suggests that adults get at least
+30 minutes of moderate-intensity physical activity on most days of the
+week. No matter your age or current physical activity level, getting out
+and moving will improve your health. Take this month&#39;s health
+challenge, &quot;Be Physically Active Daily,&quot; and get up and get moving
+today!</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Be Physically Active Daily" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-PhysicallyActive.pdf" target="_blank">Be Physically Active Daily</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Getting Physically Active Guide" href="http://www.bluehealthadvantagene.com/_docs/Shared/Brochures/Physical_Activity_LM_BCBSNE_101806.pdf" target="_blank">Getting Physically Active Guide</a></li>
+<li><a title="Healthy Tip Sheet Flyer" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20May.pdf" target="_blank">Healthy Tip Sheet Flyer</a></li></ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in mayacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="jun">
+
+    <h2>June</h2><h3>&quot;Healthy Sleep Month&quot;</h3><p>Millions
+of Americans are not getting the right amount of sleep. This affects
+our mood and our productivity throughout the day, every day. Avoid being
+on this crazy cycle by taking this month&#39;s health challenge, &quot;Sleep for
+Better Health!&quot;</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Sleep for Better Health" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-SleepRest.pdf" target="_blank">Sleep for Better Health</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Managing Fatigue Guide" href="http://www.bluehealthadvantagene.com/_docs/Shared/Brochures/Fatigue_LM_BCBSNE_101806.pdf" target="_blank">Managing Fatigue Guide</a></li>
+<li><a title="Healthy Tip Sheet Flyer" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20June.pdf" target="_blank">Healthy Tip Sheet Flyer</a></li></ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in junacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="jul">
+
+    <h2>July</h2><h3>&quot;Sun Safety Month&quot;</h3><p>Each
+year, there are more than a million cases of skin cancer diagnosed in
+the United States. Skin cancer can be caused by excess exposure to UV
+rays from the sun, tanning beds or sunlamps. Avoid skin damage and
+cancer by taking this month&#39;s health challenge, &quot;Protect Your Skin in
+the Sun!&quot;</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Protect Your Skin in the Sun" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-skin%281%29.pdf" target="_blank">Protect Your Skin in the Sun</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Protect Your Skin from the Sun - Healthfinder.gov" href="http://healthfinder.gov/prevention/ViewTopic.aspx?topicId=44" target="_blank">Protect Your Skin from the Sun - Healthfinder.gov</a></li>
+<li><a title="Healthy Tip Sheet Flyer" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20June.pdf" target="_blank">Healthy Tip Sheet Flyer</a></li></ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in julacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="aug">
+
+    <h2>August</h2><h3>&quot;Know Your Numbers Month&quot;</h3><p>Do
+you know whether or not you are at risk for diabetes, heart disease and
+other chronic conditions? There is a system of “numbers” that allows
+you to assess where you are in comparison to recommended levels. By
+knowing your numbers, you can take action to make positive changes that
+will help prevent the onset of chronic health conditions. Take action to
+know your numbers by participating in this month&#39;s health challenge,
+&quot;Get Preventive Exams!&quot;</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Get Preventive Exams" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-PreventiveExams.pdf" target="_blank">Get Preventive Exams</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="The Power of Prevention Brochure" href="http://www.bluehealthadvantagene.com/individuals/health-library/brochures-and-guides/power-of-prevention/" target="_blank">The Power of Prevention Brochure</a></li>
+<li><a title="Preventive Care Resources" href="https://www.nebraskablue.com/member-services/healthy-living/preventive-care/" target="_blank">Preventive Care Resources</a></li><li><a title="Healthy Tip Sheet Flyer" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20August.pdf" target="_blank">Healthy Tip Sheet Flyer</a></li>
+</ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in augacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="sep">
+
+    <h2>September</h2><h3>&quot;Manage Your Stress Month&quot;</h3><p>Stress
+has physical as well as emotional side effects that can impede our
+ability to live well. Since you can&#39;t simply avoid stress forever, or
+wish it away, it is vital to your health to learn how to manage it.
+Learn helpful techniques and tips on handling stess by participating in
+this month&#39;s health challenge, &quot;Lower Your Stress!&quot;</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Lower Your Stress" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-Stress%281%29.pdf" target="_blank">Lower Your Stress</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Coping with Stress Guide" href="http://www.bluehealthadvantagene.com/_docs/Shared/Brochures/51_Coping_With_Stress_101806.pdf" target="_blank">Coping with Stress Guide</a></li>
+<li><a title="Healthy Tip Sheet Flyer" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20September.pdf" target="_blank">Healthy Tip Sheet Flyer</a></li>
+</ul>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in sepacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in active" id="oct">
+
+<h2>October</h2><h3>&quot;Cholesterol Awareness Month&quot;</h3><p>When
+it comes to your cholesterol, you have to consider the good with the
+bad. HDL cholesterol is known as the &quot;good&quot; cholesterol and LDL is the
+&quot;bad&quot;. Challenge yourself to learn more about and also lower your
+cholesterol levels by participating in this month&#39;s health challenge,
+&quot;Eat to Lower Cholesterol Levels!&quot;</p><p><strong>Monthly Health Challenge</strong></p><ul><li><a title="Eat to Lower Your Cholesterol Levels" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/MHC-Lower-Cholesterol.pdf" target="_blank">Eat to Lower Your Cholesterol Levels</a></li>
+</ul><p><strong>Educational Materials</strong></p><ul><li><a title="Managing Cholesterol Guide" href="http://www.bluehealthadvantagene.com/_docs/Shared/Brochures/Cholesterol_LM_BCBSNE_101806.pdf" target="_blank">Managing Cholesterol Guide</a></li>
+<li><a title="Healthy Tip Sheet Flyer" href="http://www.bluehealthadvantagene.com/_docs/Individuals/Tools_and_Programs/2012%20Tip%20sheets%20-%20October.pdf" target="_blank">Healthy Tip Sheet Flyer</a></li></ul>   
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in octacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="nov">
+
+    <h2>November</h2>
+    <p>Challenge coming soon!</p>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in novacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+  <div class="tab-pane fade in" id="dec">
+
+    <h2>December</h2>
+    <p>Challenge coming soon!</p>
+
+<p><strong>Related Activities</strong></p>
+<ul>
+{% for activity in decacts %}
+<li><a href="/activity/{{activity.slug}}">{{activity.title}}</a></li>
+{% endfor %}
+</ul>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('#myTab a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+</script>
+
+{% endblock %}

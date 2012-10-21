@@ -45,6 +45,7 @@ def search_view(request):
   r.add('num_results', len(results))
   return r.response()
 
+@login_required(login_url='/login')
 def join_view(request, slug):
   activity = Activity.objects.get(slug=slug)
   assert request.user and request.user not in activity.users.all()
@@ -52,6 +53,7 @@ def join_view(request, slug):
   messages.success(request, "Joined "+activity.title)
   return HttpResponseRedirect("/activity/"+slug)
 
+@login_required(login_url='/login')
 def leave_view(request, slug):
   activity = Activity.objects.get(slug=slug)
   assert request.user and request.user in activity.users.all()
@@ -59,6 +61,7 @@ def leave_view(request, slug):
   messages.success(request, "Left "+activity.title)
   return HttpResponseRedirect("/activity/"+slug)
 
+@login_required(login_url='/login')
 def activities_view(request):
   assert request.user
   results = []
@@ -69,3 +72,8 @@ def activities_view(request):
   r.add('results', results)
   return r.response()
 
+def calendar_view(request):
+  r = Responder(request, 'calendar.html', 'Calendar', 'Monthly Health Challenge')
+  for month in 'jan feb mar apr may jun jul aug sep oct nov dec'.split(' '):
+    r.add(month+'acts', get_month_activities(month))
+  return r.response()
