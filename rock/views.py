@@ -12,3 +12,23 @@ def logout_view(request):
   messages.success(request, "Successfully logged out.")
   return HttpResponseRedirect('/')
 
+def search_view(request):
+  highlights = TagSet.objects.filter(highlighted=True)
+  results = []
+  slugs = []
+  if request.method == "POST":
+    print "POST", request.POST
+    for v in request.POST:
+      slugs.extend(request.POST.getlist(v))
+    print "slugs", slugs
+    for activity in Activity.objects.all():
+      print "considering activity", activity
+      for tag in activity.tag_set.tags.all():
+        print "considering tag", tag
+        if tag.slug in slugs:
+          results.append(activity)
+          break
+  print "RESULTS", results
+  r = Responder(request, 'search.html', 'Search', 'Search')
+  r.add('highlights', highlights).add('results', results).add('slugs', slugs)
+  return r.response()

@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     url(r'^logout$', 'rock.views.logout_view', name='logout'),
     url(r'^signup$', 'rock.views.signup_view', name='signup'),
     url(r'^contact$', 'rock.views.contact_view', name='contact'),
+    url(r'^search$', 'rock.views.search_view', name='search'),
     # url(r'^rock/', include('rock.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form action="/search" method="POST">
+
+<p> I'm looking for something for... </p>
+{% for tagset in highlights %}
+  <p> {{ tagset.title }} </p>
+  <div class="btn-group tagset" data-toggle="buttons-checkbox">
+    {% for tag in tagset.tags.all %}
+      <button type="button" class="boxbtn btn" data-target="box-{{tagset.slug}}-{{tag.slug}}">{{tag.body}}</button>
+      <input class="boxinput" id="box-{{tagset.slug}}-{{tag.slug}}" type="checkbox" name="{{tagset.slug}}" value="{{tag.slug}}" style="display: none;" {% if tag.slug in slugs %} checked {% endif %} /> 
+    {% endfor %}
+  </div>
+{% endfor %}
+
+<br/>
+<p><input type="submit" value="Search" /></p>
+
+</form>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".boxinput").each(function() {
+      if ($(this).prop('checked')) {
+        $("button[data-target="+$(this).prop('id')+"]").click();
+      }
+    });
+    $(".boxbtn").click(function(){
+      x = $(document.getElementById($(this).attr('data-target')));
+      c = x.prop('checked');
+      //alert('toggling '+x+' to !'+(c));
+      x.prop('checked', !c);
+    });
+  });
+</script>
+
+<div id="results" class="results">
+
+  {% for result in results %}
+
+  <div class="result">
+    <p> {{ result.title }} - {{ result.body }} </p>
+  </div>
+
+  {% endfor %}
+
+</div>
+
+{% endblock %}

@@ -6,7 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
-from models import Post
+from models import *
 import datetime
 
 def base_context_dict(user):

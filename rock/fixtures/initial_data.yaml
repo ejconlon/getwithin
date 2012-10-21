@@ -1,0 +1,107 @@
+- model: rock.tag
+  pk: 1
+  fields:
+    slug: age20
+    body: Age 20
+- model: rock.tag
+  pk: 2
+  fields:
+    slug: age30
+    body: Age 30
+- model: rock.tag
+  pk: 3
+  fields:
+    slug: age40
+    body: Age 40
+- model: rock.tag
+  pk: 4
+  fields:
+    slug: age50
+    body: Age 50
+- model: rock.tag
+  pk: 5
+  fields:
+    slug: age60
+    body: Age 60
+
+- model: rock.tagset
+  pk: 1
+  fields:
+    slug: age
+    title: Age
+    highlighted: True
+    tags: [1,2,3,4,5]
+
+- model: rock.tag
+  pk: 6
+  fields:
+    slug: fitness
+    body: Fitness
+- model: rock.tag
+  pk: 7
+  fields:
+    slug: health
+    body: Health
+- model: rock.tag
+  pk: 8
+  fields:
+    slug: spirituality
+    body: Spirituality
+- model: rock.tag
+  pk: 9
+  fields:
+    slug: creativity
+    body: Creativity
+
+- model: rock.tag
+  pk: 10
+  fields:
+    slug: everyone
+    body: Everyone
+
+- model: rock.tag
+  pk: 11
+  fields:
+    slug: nutrition 
+    body: Nutrition 
+
+- model: rock.tagset
+  pk: 2
+  fields:
+    slug: goal
+    title: Goal
+    highlighted: True
+    tags: [6,7,8,9,11]
+
+- model: rock.tagset
+  pk: 3
+  fields:
+    slug: rockclimbingset
+    title: rockclimbingset
+    highlighted: False
+    tags: [1,2]
+
+- model: rock.tagset
+  pk: 4
+  fields:
+    slug: taichiset
+    title: taichiset
+    highlighted: False
+    tags: [3,4,5]
+
+- model: rock.activity
+  pk: 1
+  fields:
+    slug: rockclimbing
+    title: Rock Climbing
+    body: Do you like scraped knees?  This is the activity for you!
+    tag_set: 3
+
+- model: rock.activity
+  pk: 2
+  fields:
+    slug: taichi
+    title: Tai Chi
+    body: Slow motion energy wrangling.
+    tag_set: 4
+
