@@ -12,6 +12,7 @@ tags = [
   'Creativity',
   'Spirituality',
   'Nutrition',
+  'Finance',
 
   'Injury',
   'Pregnancy',
@@ -23,7 +24,7 @@ tags = [
 
 tagsets = [
   ('Age', True, 'Age 20', 'Age 30', 'Age 40', 'Age 50', 'Age 60', 'Everyone'),
-  ('Goal', True, 'Health', 'Fun', 'Creativity', 'Spirituality', 'Nutrition'),
+  ('Goal', True, 'Health', 'Fun', 'Creativity', 'Spirituality', 'Nutrition', 'Finance'),
   ('Life event', True, 'Injury', 'Pregnancy', 'Menopause', 'Anniversary'),
   ('Challenge', True, 'Under 30'),
   #('Rock Climbing', False, 'Age 20', 'Age 30', 'Fun', 'Health'),
@@ -72,8 +73,6 @@ Pilates - health, age 20-60, injury, anniversary, pregnancy, menopause, under30 
 snaps2 = """
 Running - health, age 20-60, injury, anniversary, menopause, under30 - Learn how to run.
 
-Tai Chi - everyone, age 40-60 -  Soft moving ancient movement art.
-
 Qi Gong -  age 40-60 - Ancient elemental slow moving self moving energy work.
 
 Climbing Gym - age 20-40, anniversary, under30 - Strap in and go up but dont forget your belay partner cuz you cant climb alone!
@@ -112,7 +111,7 @@ Mindfulness Classes - spirituality, age 20-60, injury, anniversary, pregnancy, m
 
 Qi Gong - spirituality, age 40-60 - Soft fluid moving meditation.
 
-Tai Chi - spirituality, age 40-60 - Soft fluid moving meditation often with animal forms.
+Tai Chi - everyone, spirituality, age 40-60 - Soft fluid moving meditation often with animal forms.
 
 Course in Miracles Groups - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Spiritual study group to deepen your forgiveness and align a graceful spirit.
 
@@ -133,6 +132,14 @@ Ceramics Classes - creativity, age 20-60, injury, anniversary, pregnancy, menopa
 Poetry - creativity, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Write poetry and share it with others.
 
 Welding - creativity, age 20-60, injury, anniversary, menopause, under30 - Metal bending.
+
+Financial Goal Setting Session - finance, everyone - Set some goals and get financially secure.
+
+Financial Planning Session with a Planner - finance, everyone - Plan our your financial future.
+
+Coaching from a Financial Wellbeing Coach - finance, everyone - Prosper and be well.
+
+Investing Classes - finance, everyone - Dangerous but fun.
 """
 
 for snap in (snaps + snaps2 + snaps3).split('\n'):
@@ -143,14 +150,14 @@ for snap in (snaps + snaps2 + snaps3).split('\n'):
   newtags = []
   for tag in oldtags:
     if tag == 'age 20-60':
-      tags.extend(['Age 20', 'Age 30', 'Age 40', 'Age 50', 'Age 60'])
+      newtags.extend(['Age 20', 'Age 30', 'Age 40', 'Age 50', 'Age 60'])
     elif tag == 'age 20-40':
-      tags.extend(['Age 20', 'Age 30', 'Age 40'])
+      newtags.extend(['Age 20', 'Age 30', 'Age 40'])
     elif tag == 'age 40-60':
-      tags.extend(['Age 40', 'Age 50', 'Age 60'])
+      newtags.extend(['Age 40', 'Age 50', 'Age 60'])
     else:
       newtags.append(tag[0].upper()+tag[1:])
-  body =  parts[2]
+  body = parts[2]
   tagsets.append([title, False] + newtags)
   activities.append((title, body))
 
