@@ -48,9 +48,19 @@ def modify_activities(activities, slug_to_tagset_pk):
     new_activities.append(new_activity)
   return new_activities
 
+def modify_events(events, slug_to_activity_pk):
+  new_events = []
+  for event in events:
+    new_event = {}
+    new_event['month'] = event[0]
+    new_event['activity'] = slug_to_activity_pk[event[1].lower().replace(' ', '')]
+    new_events.append(new_event)
+  return new_events
+
 tag_keys = ['slug', 'body']
 tagset_keys = ['slug', 'title', 'highlighted', 'tags']
 activity_keys = ['slug', 'title', 'body', 'tag_set']
+event_keys = ['month', 'activity']
 
 tags = [
   'Age 20',
@@ -77,13 +87,16 @@ activities = [
   ('Tai Chi', 'Slow motion energy wrangling.'),
 ]
 
-pk = 1
+events = [(x, 'Tai Chi') for x in 'jan feb mar apr may jun jul aug sep oct nov dec'.split(' ')]
+
 slug_to_tag_pk = {}
 slug_to_tagset_pk = {}
+slug_to_activity_pk = {}
 ystr = ""
 
 tags = modify_tags(tags)
 
+pk = 1
 for tag in tags:
   ystr += write_block('rock.tag', pk, dfilter(tag, tag_keys).items())
   slug_to_tag_pk[tag['slug']] = pk
@@ -91,6 +104,7 @@ for tag in tags:
 
 tagsets = modify_tagsets(tagsets, slug_to_tag_pk)
 
+pk = 1
 for tagset in tagsets:
   ystr += write_block('rock.tagset', pk, dfilter(tagset, tagset_keys).items())
   slug_to_tagset_pk[tagset['slug']] = pk
@@ -98,8 +112,18 @@ for tagset in tagsets:
 
 activities = modify_activities(activities, slug_to_tagset_pk)  
 
+pk = 1
 for activity in activities:
   ystr += write_block('rock.activity', pk, dfilter(activity, activity_keys).items())
+  slug_to_activity_pk[activity['slug']] = pk
+  pk += 1
+
+events = modify_events(events, slug_to_activity_pk)
+
+pk = 1
+for event in events:
+  ystr += write_block('rock.event', pk, dfilter(event, event_keys).items())
   pk += 1
 
 print ystr
+

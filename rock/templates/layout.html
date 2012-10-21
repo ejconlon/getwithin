@@ -139,6 +139,7 @@
     <div class="container">
 
       {% if messages %}
+      <center>
       <ul class="messages">
           {% for message in messages %}
             {% if message.tags %}
@@ -148,6 +149,7 @@
             {% endif %}
           {% endfor %}
       </ul>
+      </center>
       {% endif %}
 
       <div class="floaty">

@@ -49,45 +49,105 @@
     body: Nutrition
     slug: nutrition
 - model: rock.tagset
-  pk: 11
+  pk: 1
   fields:
     highlighted: True
     tags: [1, 2, 3, 4, 5]
     slug: age
     title: Age
 - model: rock.tagset
-  pk: 12
+  pk: 2
   fields:
     highlighted: True
     tags: [6, 7, 8, 9, 10]
     slug: goal
     title: Goal
 - model: rock.tagset
-  pk: 13
+  pk: 3
   fields:
     highlighted: False
     tags: [1, 2, 7, 6]
     slug: rockclimbing
     title: Rock Climbing
 - model: rock.tagset
-  pk: 14
+  pk: 4
   fields:
     highlighted: False
     tags: [4, 5, 6]
     slug: taichi
     title: Tai Chi
 - model: rock.activity
-  pk: 15
+  pk: 1
   fields:
     body: Do you like skinned knees? This is the sport for you!
     slug: rockclimbing
-    tag_set: 13
+    tag_set: 3
     title: Rock Climbing
 - model: rock.activity
-  pk: 16
+  pk: 2
   fields:
     body: Slow motion energy wrangling.
     slug: taichi
-    tag_set: 14
+    tag_set: 4
     title: Tai Chi
+- model: rock.event
+  pk: 1
+  fields:
+    activity: 2
+    month: jan
+- model: rock.event
+  pk: 2
+  fields:
+    activity: 2
+    month: feb
+- model: rock.event
+  pk: 3
+  fields:
+    activity: 2
+    month: mar
+- model: rock.event
+  pk: 4
+  fields:
+    activity: 2
+    month: apr
+- model: rock.event
+  pk: 5
+  fields:
+    activity: 2
+    month: may
+- model: rock.event
+  pk: 6
+  fields:
+    activity: 2
+    month: jun
+- model: rock.event
+  pk: 7
+  fields:
+    activity: 2
+    month: jul
+- model: rock.event
+  pk: 8
+  fields:
+    activity: 2
+    month: aug
+- model: rock.event
+  pk: 9
+  fields:
+    activity: 2
+    month: sep
+- model: rock.event
+  pk: 10
+  fields:
+    activity: 2
+    month: oct
+- model: rock.event
+  pk: 11
+  fields:
+    activity: 2
+    month: nov
+- model: rock.event
+  pk: 12
+  fields:
+    activity: 2
+    month: dec
 

@@ -11,7 +11,7 @@ from models import *
 import datetime
 
 def get_month_activities(month):
-  return Activity.objects.filter(slug='taichi')
+  return [x.activity for x in Event.objects.filter(month=month)]
 
 def base_context_dict(user):
   navlinks = []

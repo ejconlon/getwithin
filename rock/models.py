@@ -34,3 +34,11 @@ class Activity(models.Model):
 
   def __unicode__(self):
     return self.title
+
+class Event(models.Model):
+  month = models.CharField(max_length=10)
+  activity = models.ForeignKey(Activity)
+
+  def __unicode__(self):
+    return self.month + " " + unicode(self.activity)
+
