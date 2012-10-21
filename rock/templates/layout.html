@@ -69,6 +69,12 @@
         margin-top: 40px;
         margin-bottom: 10px;
       }
+      #resultstable td {
+        padding: 10px;
+      }
+      #results {
+        font-size: 16px;
+      }
     </style>
     <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -144,12 +150,14 @@
       </ul>
       {% endif %}
 
+      <div class="floaty">
       {% if header %}
         <h1>{{ header }}</h1>
       {% endif %}
 
       {% block content %}
       {% endblock %}
+      </div>
 
       <div class="floaty" id="footer">
         &copy; Built at Techrasing Fall 2012 by Tibi Strazzera and Eric Conlon

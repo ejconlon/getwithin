@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h3> {{ activity.title }} </h3>
+
+<p> {{ activity.body }} </p>
+
+{% if is_into %}
+  {% if num_into == 0 %}
+    <p> No one is into this yet. </p>
+  {% elif num_into == 1 %}
+    <p> Only you are into this.  Don't worry, more people will join you soon! </p>
+  {% else %}
+    <p> {{ num_results }} people are into this.  You will have a lot of fun!</p>
+  {% endif %}
+  <br/>
+  <p><a href="/leave/{{ activity.slug }}" class="btn btn-large">Leave this activity.</a></p>
+{% else %}
+  {% if num_into == 0 %}
+    <p> No one is into this yet.  Be the first! </p>
+  {% elif num_into == 1 %}
+    <p> Only one person is into this.  Join them! </p>
+  {% else %}
+    <p> {{ num_results }} other people are into this.  Join them! </p>
+  {% endif %}
+  <br/>
+  <p><a href="/join/{{ activity.slug }}" class="btn btn-primary btn-large">Get withinto it!</a></p>
+{% endif %}
+
+{% endblock %}

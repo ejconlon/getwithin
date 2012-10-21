@@ -15,6 +15,7 @@ def base_context_dict(user):
   navlinks.append(('Contact', '/contact', False))
   if user is not None and user.is_authenticated():
     #navlinks.append(('Account', '/account', False))
+    navlinks.append(('Activities', '/activities', False))
     navlinks.append(('Logout '+user.username, '/logout', False))
   else:
     navlinks.append(('Signup', '/signup', False))

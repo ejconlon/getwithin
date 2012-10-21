@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div id="results" class="results">
+
+  {% if results %}
+
+    <p> Here's what you're withinto: </p>
+
+    <table id="resultstable">
+    {% for result in results %}
+
+      <tr>
+        <td>
+          <a href="/activity/{{result.slug}}">{{ result.title }}</a>
+        </td>
+        <td>
+          {{ result.body }}
+        </td>
+      </tr>
+
+    {% endfor %}
+    </table>
+
+    <div id="tryme" class="floaty">
+      <p>
+        <a href="/search" class="btn btn-primary btn-large">Find some MORE activities!</a>
+      </p>  
+    </div>
+  {% else %}
+    <div id="tryme" class="floaty">
+      <p>
+        <a href="/search" class="btn btn-primary btn-large">Find some activities!</a>
+      </p>  
+    </div>
+  {% endif %}
+
+</div>
+
+{% endblock %}

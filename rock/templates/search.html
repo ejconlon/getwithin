@@ -37,13 +37,30 @@
 
 <div id="results" class="results">
 
-  {% for result in results %}
+  {% if results %}
 
-  <div class="result">
-    <p> {{ result.title }} - {{ result.body }} </p>
-  </div>
+    <p> {{ num_results }} activities may interest you: </p>
 
-  {% endfor %}
+    <table id="resultstable">
+    {% for result in results %}
+
+      <tr>
+        <td>
+          <a href="/activity/{{result.slug}}">{{ result.title }}</a>
+        </td>
+        <td>
+          {{ result.body }}
+        </td>
+      </tr>
+
+    {% endfor %}
+    </table>
+
+  {% else %}
+    <p> No results found. </p>
+
+
+  {% endif %}
 
 </div>
 
