@@ -52,7 +52,6 @@ class FormHandler(object):
         form = self.klass(request.POST)
         if form.fill(request):            
           messages.success(request, self.success_msg)
-          print request.POST
           if 'next' in request.POST:
             self.redir_url = request.POST['next']
           return HttpResponseRedirect(self.redir_url)
