@@ -39,7 +39,7 @@ events = [(x, 'Tai Chi') for x in 'jan feb mar apr may jun jul aug sep oct nov d
 snaps = """
 Chiropractic - health, age 20-60, injury - Spinal manipulations so you can rest medicine.
 
-Acupuncture - health, age20-60, injury, pregnancy, menopause, anniversary, under 30 challenge - Flying needles at magnetic points in your body somehow produce a health benefit? Seems to work since there are a million people practicing here and it's like 5,000 years old or something like that.
+Acupuncture - health, age 20-60, injury, pregnancy, menopause, anniversary, under 30 - Flying needles at magnetic points in your body somehow produce a health benefit? Seems to work since there are a million people practicing here and it's like 5,000 years old or something like that.
 
 Swedish Massage - health, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Rest and relax on a table receiving soft muscle tissue massage with oil.  Feel good massage.
 
@@ -55,7 +55,7 @@ Zero Balancing - health, age 20-60, injury, anniversary, pregnancy, menopause, u
 
 Polarity Therapy - health, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Energy balancing.
 
-Biofeedback Session - health, age 20-60, injury, anniversary, pregnancy, menopause, under30, brainwave entrainment - Re-patterning neural networks resulting in transformation of consciousness.
+Biofeedback Session - health, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Re-patterning neural networks resulting in transformation of consciousness.
 
 Shamanic Journey - health, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Lay down close your eyes and listen to the drum while you consciously travel to upper-middle or lower worlds and meet your spirit allies and learn valuable insights into your life.
 
@@ -80,9 +80,6 @@ for snap in snaps.split('\n'):
     else:
       newtags.append(tag[0].upper()+tag[1:])
   body =  parts[2]
-  tagsets.append([title, False] + tags)
+  tagsets.append([title, False] + newtags)
   activities.append((title, body))
 
-print tags
-print tagsets
-print activities

@@ -48,11 +48,411 @@
   fields:
     body: Nutrition
     slug: nutrition
+- model: rock.tag
+  pk: 11
+  fields:
+    body: Injury
+    slug: injury
+- model: rock.tag
+  pk: 12
+  fields:
+    body: Pregnancy
+    slug: pregnancy
+- model: rock.tag
+  pk: 13
+  fields:
+    body: Menopause
+    slug: menopause
+- model: rock.tag
+  pk: 14
+  fields:
+    body: Anniversary
+    slug: anniversary
+- model: rock.tag
+  pk: 15
+  fields:
+    body: Under 30
+    slug: under30
+- model: rock.tag
+  pk: 16
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 17
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 18
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 19
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 20
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 21
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 22
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 23
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 24
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 25
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 26
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 27
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 28
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 29
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 30
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 31
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 32
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 33
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 34
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 35
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 36
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 37
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 38
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 39
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 40
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 41
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 42
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 43
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 44
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 45
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 46
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 47
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 48
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 49
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 50
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 51
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 52
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 53
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 54
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 55
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 56
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 57
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 58
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 59
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 60
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 61
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 62
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 63
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 64
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 65
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 66
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 67
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 68
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 69
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 70
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 71
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 72
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 73
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 74
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 75
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 76
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 77
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 78
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 79
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 80
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 81
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 82
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 83
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 84
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 85
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 86
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 87
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 88
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 89
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 90
+  fields:
+    body: Age 60
+    slug: age60
 - model: rock.tagset
   pk: 1
   fields:
     highlighted: True
-    tags: [1, 2, 3, 4, 5]
+    tags: [86, 87, 88, 89, 90]
     slug: age
     title: Age
 - model: rock.tagset
@@ -65,31 +465,255 @@
 - model: rock.tagset
   pk: 3
   fields:
-    highlighted: False
-    tags: [1, 2, 7, 6]
-    slug: rockclimbing
-    title: Rock Climbing
+    highlighted: True
+    tags: [11, 12, 13, 14]
+    slug: lifeevent
+    title: Life event
 - model: rock.tagset
   pk: 4
   fields:
+    highlighted: True
+    tags: [15]
+    slug: challenge
+    title: Challenge
+- model: rock.tagset
+  pk: 5
+  fields:
     highlighted: False
-    tags: [4, 5, 6]
+    tags: [86, 87, 7, 6]
+    slug: rockclimbing
+    title: Rock Climbing
+- model: rock.tagset
+  pk: 6
+  fields:
+    highlighted: False
+    tags: [88, 89, 90, 6]
     slug: taichi
     title: Tai Chi
+- model: rock.tagset
+  pk: 7
+  fields:
+    highlighted: False
+    tags: [6, 11]
+    slug: chiropractic
+    title: Chiropractic
+- model: rock.tagset
+  pk: 8
+  fields:
+    highlighted: False
+    tags: [6, 11, 12, 13, 14, 15]
+    slug: acupuncture
+    title: Acupuncture
+- model: rock.tagset
+  pk: 9
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: swedishmassage
+    title: Swedish Massage
+- model: rock.tagset
+  pk: 10
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: rolfing
+    title: Rolfing
+- model: rock.tagset
+  pk: 11
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: deeptissuemassage
+    title: Deep Tissue Massage
+- model: rock.tagset
+  pk: 12
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: myofacialrelease
+    title: Myofacial Release
+- model: rock.tagset
+  pk: 13
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: cranialsacral
+    title: Cranial Sacral
+- model: rock.tagset
+  pk: 14
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: zerobalancing
+    title: Zero Balancing
+- model: rock.tagset
+  pk: 15
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: polaritytherapy
+    title: Polarity Therapy
+- model: rock.tagset
+  pk: 16
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: biofeedbacksession
+    title: Biofeedback Session
+- model: rock.tagset
+  pk: 17
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: shamanicjourney
+    title: Shamanic Journey
+- model: rock.tagset
+  pk: 18
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: naturopathicconsultation
+    title: Naturopathic Consultation
+- model: rock.tagset
+  pk: 19
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: hypnosis
+    title: Hypnosis
+- model: rock.tagset
+  pk: 20
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: yoga
+    title: Yoga
+- model: rock.tagset
+  pk: 21
+  fields:
+    highlighted: False
+    tags: [6, 11, 14, 12, 13, 15]
+    slug: pilates
+    title: Pilates
 - model: rock.activity
   pk: 1
   fields:
     body: Do you like skinned knees? This is the sport for you!
     slug: rockclimbing
-    tag_set: 3
+    tag_set: 5
     title: Rock Climbing
 - model: rock.activity
   pk: 2
   fields:
     body: Slow motion energy wrangling.
     slug: taichi
-    tag_set: 4
+    tag_set: 6
     title: Tai Chi
+- model: rock.activity
+  pk: 3
+  fields:
+    body: Spinal manipulations so you can rest medicine.
+    slug: chiropractic
+    tag_set: 7
+    title: Chiropractic
+- model: rock.activity
+  pk: 4
+  fields:
+    body: Flying needles at magnetic points in your body somehow produce a health benefit? Seems to work since there are a million people practicing here and it's like 5,000 years old or something like that.
+    slug: acupuncture
+    tag_set: 8
+    title: Acupuncture
+- model: rock.activity
+  pk: 5
+  fields:
+    body: Rest and relax on a table receiving soft muscle tissue massage with oil.  Feel good massage.
+    slug: swedishmassage
+    tag_set: 9
+    title: Swedish Massage
+- model: rock.activity
+  pk: 6
+  fields:
+    body: Often painful really really deep massage changing your muscle patterns often ending up with postural changes.
+    slug: rolfing
+    tag_set: 10
+    title: Rolfing
+- model: rock.activity
+  pk: 7
+  fields:
+    body: Deep pressure massage for hose more stubborn knots in your muscles.
+    slug: deeptissuemassage
+    tag_set: 11
+    title: Deep Tissue Massage
+- model: rock.activity
+  pk: 8
+  fields:
+    body: Intuitive touch with lighter pressure that releases muscle tension.
+    slug: myofacialrelease
+    tag_set: 12
+    title: Myofacial Release
+- model: rock.activity
+  pk: 9
+  fields:
+    body: Incredibly gentle deep and slow holding of different areas hooding tension and supporting release on very deep levels helps tmj, vertigo, birth trauma, headaches, ringing ears.
+    slug: cranialsacral
+    tag_set: 13
+    title: Cranial Sacral
+- model: rock.activity
+  pk: 10
+  fields:
+    body: Energy balancing.
+    slug: zerobalancing
+    tag_set: 14
+    title: Zero Balancing
+- model: rock.activity
+  pk: 11
+  fields:
+    body: Energy balancing.
+    slug: polaritytherapy
+    tag_set: 15
+    title: Polarity Therapy
+- model: rock.activity
+  pk: 12
+  fields:
+    body: Re-patterning neural networks resulting in transformation of consciousness.
+    slug: biofeedbacksession
+    tag_set: 16
+    title: Biofeedback Session
+- model: rock.activity
+  pk: 13
+  fields:
+    body: Lay down close your eyes and listen to the drum while you consciously travel to upper-middle or lower worlds and meet your spirit allies and learn valuable insights into your life.
+    slug: shamanicjourney
+    tag_set: 17
+    title: Shamanic Journey
+- model: rock.activity
+  pk: 14
+  fields:
+    body: Preventative medicine doctors using herbs, homeopathy, acupuncture, supplements, and holistic medicine.
+    slug: naturopathicconsultation
+    tag_set: 18
+    title: Naturopathic Consultation
+- model: rock.activity
+  pk: 15
+  fields:
+    body: Follow the light and just listen to my voice.... Learn to re-pattern your subconscious mind for better health make choices about which areas you want to improve and voila! Watch the magic in effect.
+    slug: hypnosis
+    tag_set: 19
+    title: Hypnosis
+- model: rock.activity
+  pk: 16
+  fields:
+    body: Get a yoga mat and pray through your body while making interesting shapes.
+    slug: yoga
+    tag_set: 20
+    title: Yoga
+- model: rock.activity
+  pk: 17
+  fields:
+    body: Work that core with a variety leg lifting and hip bending exercises.
+    slug: pilates
+    tag_set: 21
+    title: Pilates
 - model: rock.event
   pk: 1
   fields:
