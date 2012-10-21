@@ -52,12 +52,17 @@ class FormHandler(object):
         form = self.klass(request.POST)
         if form.fill(request):            
           messages.success(request, self.success_msg)
+          print request.POST
+          if 'next' in request.POST:
+            self.redir_url = request.POST['next']
           return HttpResponseRedirect(self.redir_url)
         else:
           messages.error(request, self.failure_msg)
       else:
+        if 'next' in request.GET:
+          self.redir_url = request.GET['next']
         form = self.klass()
-      return Responder(request, self.templatefile, self.name, self.name).add('form', form).response()
+      return Responder(request, self.templatefile, self.name, self.name).add('form', form).add('next', self.redir_url).response()
     return func
 
 class Responder(object):

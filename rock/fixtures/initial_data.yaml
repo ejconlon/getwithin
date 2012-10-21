@@ -438,15 +438,15 @@
   fields:
     highlighted: False
     tags: [12, 6]
-    slug: financialplanningsessionwithaplanner
-    title: Financial Planning Session with a Planner
+    slug: financialplanningsession
+    title: Financial Planning Session
 - model: rock.tagset
   pk: 52
   fields:
     highlighted: False
     tags: [12, 6]
-    slug: coachingfromafinancialwellbeingcoach
-    title: Coaching from a Financial Wellbeing Coach
+    slug: financialwellbeingcoaching
+    title: Financial Wellbeing Coaching
 - model: rock.tagset
   pk: 53
   fields:
@@ -780,16 +780,16 @@
   pk: 47
   fields:
     body: Plan our your financial future.
-    slug: financialplanningsessionwithaplanner
+    slug: financialplanningsession
     tag_set: 51
-    title: Financial Planning Session with a Planner
+    title: Financial Planning Session
 - model: rock.activity
   pk: 48
   fields:
     body: Prosper and be well.
-    slug: coachingfromafinancialwellbeingcoach
+    slug: financialwellbeingcoaching
     tag_set: 52
-    title: Coaching from a Financial Wellbeing Coach
+    title: Financial Wellbeing Coaching
 - model: rock.activity
   pk: 49
   fields:
@@ -857,4 +857,369 @@
   fields:
     activity: 35
     month: dec
+- model: rock.event
+  pk: 13
+  fields:
+    activity: 2
+    month: oct
+- model: rock.event
+  pk: 14
+  fields:
+    activity: 6
+    month: oct
+- model: rock.event
+  pk: 15
+  fields:
+    activity: 10
+    month: oct
+- model: rock.event
+  pk: 16
+  fields:
+    activity: 14
+    month: oct
+- model: rock.event
+  pk: 17
+  fields:
+    activity: 35
+    month: oct
+- model: rock.event
+  pk: 18
+  fields:
+    activity: 34
+    month: oct
+- model: rock.event
+  pk: 19
+  fields:
+    activity: 26
+    month: oct
+- model: rock.event
+  pk: 20
+  fields:
+    activity: 33
+    month: oct
+- model: rock.event
+  pk: 21
+  fields:
+    activity: 44
+    month: oct
+- model: rock.event
+  pk: 22
+  fields:
+    activity: 46
+    month: oct
+- model: rock.event
+  pk: 23
+  fields:
+    activity: 8
+    month: jan
+- model: rock.event
+  pk: 24
+  fields:
+    activity: 11
+    month: jan
+- model: rock.event
+  pk: 25
+  fields:
+    activity: 13
+    month: jan
+- model: rock.event
+  pk: 26
+  fields:
+    activity: 14
+    month: jan
+- model: rock.event
+  pk: 27
+  fields:
+    activity: 15
+    month: jan
+- model: rock.event
+  pk: 28
+  fields:
+    activity: 16
+    month: jan
+- model: rock.event
+  pk: 29
+  fields:
+    activity: 20
+    month: jan
+- model: rock.event
+  pk: 30
+  fields:
+    activity: 21
+    month: jan
+- model: rock.event
+  pk: 31
+  fields:
+    activity: 26
+    month: jan
+- model: rock.event
+  pk: 32
+  fields:
+    activity: 46
+    month: jan
+- model: rock.event
+  pk: 33
+  fields:
+    activity: 2
+    month: feb
+- model: rock.event
+  pk: 34
+  fields:
+    activity: 12
+    month: feb
+- model: rock.event
+  pk: 35
+  fields:
+    activity: 11
+    month: feb
+- model: rock.event
+  pk: 36
+  fields:
+    activity: 7
+    month: feb
+- model: rock.event
+  pk: 37
+  fields:
+    activity: 14
+    month: feb
+- model: rock.event
+  pk: 38
+  fields:
+    activity: 35
+    month: feb
+- model: rock.event
+  pk: 39
+  fields:
+    activity: 34
+    month: feb
+- model: rock.event
+  pk: 40
+  fields:
+    activity: 21
+    month: feb
+- model: rock.event
+  pk: 41
+  fields:
+    activity: 32
+    month: feb
+- model: rock.event
+  pk: 42
+  fields:
+    activity: 36
+    month: feb
+- model: rock.event
+  pk: 43
+  fields:
+    activity: 37
+    month: feb
+- model: rock.event
+  pk: 44
+  fields:
+    activity: 40
+    month: feb
+- model: rock.event
+  pk: 45
+  fields:
+    activity: 38
+    month: feb
+- model: rock.event
+  pk: 46
+  fields:
+    activity: 39
+    month: feb
+- model: rock.event
+  pk: 47
+  fields:
+    activity: 43
+    month: feb
+- model: rock.event
+  pk: 48
+  fields:
+    activity: 42
+    month: feb
+- model: rock.event
+  pk: 49
+  fields:
+    activity: 45
+    month: feb
+- model: rock.event
+  pk: 50
+  fields:
+    activity: 46
+    month: feb
+- model: rock.event
+  pk: 51
+  fields:
+    activity: 47
+    month: feb
+- model: rock.event
+  pk: 52
+  fields:
+    activity: 49
+    month: feb
+- model: rock.event
+  pk: 53
+  fields:
+    activity: 3
+    month: mar
+- model: rock.event
+  pk: 54
+  fields:
+    activity: 8
+    month: mar
+- model: rock.event
+  pk: 55
+  fields:
+    activity: 13
+    month: mar
+- model: rock.event
+  pk: 56
+  fields:
+    activity: 14
+    month: mar
+- model: rock.event
+  pk: 57
+  fields:
+    activity: 35
+    month: mar
+- model: rock.event
+  pk: 58
+  fields:
+    activity: 34
+    month: mar
+- model: rock.event
+  pk: 59
+  fields:
+    activity: 21
+    month: mar
+- model: rock.event
+  pk: 60
+  fields:
+    activity: 33
+    month: mar
+- model: rock.event
+  pk: 61
+  fields:
+    activity: 46
+    month: mar
+- model: rock.event
+  pk: 62
+  fields:
+    activity: 48
+    month: mar
+- model: rock.event
+  pk: 63
+  fields:
+    activity: 3
+    month: sep
+- model: rock.event
+  pk: 64
+  fields:
+    activity: 5
+    month: sep
+- model: rock.event
+  pk: 65
+  fields:
+    activity: 1
+    month: sep
+- model: rock.event
+  pk: 66
+  fields:
+    activity: 2
+    month: sep
+- model: rock.event
+  pk: 67
+  fields:
+    activity: 7
+    month: sep
+- model: rock.event
+  pk: 68
+  fields:
+    activity: 10
+    month: sep
+- model: rock.event
+  pk: 69
+  fields:
+    activity: 11
+    month: sep
+- model: rock.event
+  pk: 70
+  fields:
+    activity: 35
+    month: sep
+- model: rock.event
+  pk: 71
+  fields:
+    activity: 34
+    month: sep
+- model: rock.event
+  pk: 72
+  fields:
+    activity: 21
+    month: sep
+- model: rock.event
+  pk: 73
+  fields:
+    activity: 32
+    month: sep
+- model: rock.event
+  pk: 74
+  fields:
+    activity: 33
+    month: sep
+- model: rock.event
+  pk: 75
+  fields:
+    activity: 36
+    month: sep
+- model: rock.event
+  pk: 76
+  fields:
+    activity: 40
+    month: sep
+- model: rock.event
+  pk: 77
+  fields:
+    activity: 39
+    month: sep
+- model: rock.event
+  pk: 78
+  fields:
+    activity: 38
+    month: sep
+- model: rock.event
+  pk: 79
+  fields:
+    activity: 41
+    month: sep
+- model: rock.event
+  pk: 80
+  fields:
+    activity: 45
+    month: sep
+- model: rock.event
+  pk: 81
+  fields:
+    activity: 42
+    month: sep
+- model: rock.event
+  pk: 82
+  fields:
+    activity: 43
+    month: sep
+- model: rock.event
+  pk: 83
+  fields:
+    activity: 49
+    month: sep
+- model: rock.event
+  pk: 84
+  fields:
+    activity: 47
+    month: sep
+- model: rock.event
+  pk: 85
+  fields:
+    activity: 48
+    month: sep
 

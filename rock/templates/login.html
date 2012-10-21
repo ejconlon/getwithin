@@ -3,7 +3,10 @@
 
 <form action="/login" method="POST">
   {{ form.as_p }}
+  <input type="hidden" name="next" value="{{next}}"/>
   <p><input type="submit" value="Log in" /></p>
 </form>
+
+<p><a href="/signup?next={{next}}">Or signup.</a> (It's quick and easy!)</p>
 
 {% endblock %}

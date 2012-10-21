@@ -40,7 +40,7 @@ def search_view(request):
           results.append(activity)
           break
   print "RESULTS", results
-  r = Responder(request, 'search.html', 'Search', 'Search')
+  r = Responder(request, 'search.html', 'Search', 'Find wellness activities')
   r.add('highlights', highlights).add('results', results).add('slugs', slugs)
   r.add('num_results', len(results))
   return r.response()

@@ -135,9 +135,9 @@ Welding - creativity, age 20-60, injury, anniversary, menopause, under30 - Metal
 
 Financial Goal Setting Session - finance, everyone - Set some goals and get financially secure.
 
-Financial Planning Session with a Planner - finance, everyone - Plan our your financial future.
+Financial Planning Session - finance, everyone - Plan our your financial future.
 
-Coaching from a Financial Wellbeing Coach - finance, everyone - Prosper and be well.
+Financial Wellbeing Coaching - finance, everyone - Prosper and be well.
 
 Investing Classes - finance, everyone - Dangerous but fun.
 """
@@ -160,4 +160,25 @@ for snap in (snaps + snaps2 + snaps3).split('\n'):
   body = parts[2]
   tagsets.append([title, False] + newtags)
   activities.append((title, body))
+
+
+event_snaps = """\
+oct - Acupuncture, Myofacial Release, Biofeedback Session, Yoga, Tai Chi, Qi Gong, Hiking, Mindfulness Classes, Poetry, Financial Goal Setting Session
+
+jan - Zero Balancing, Shamanic Journey, Hypnosis, Yoga, Pilates, Running, Aerobics, Dance, Hiking, Financial Goal Setting Session
+
+feb - Acupuncture, Naturopathic Consultation, Shamanic Journey, Cranial Sacral, Yoga, Tai Chi, Qi Gong, Dance, Meditation Classes, Course in Miracles Groups, Prayer Groups, Conflict Resolution Classes, Tantra, Relationship Communication Classes, Ceramics Classes, Acting Classes, Welding, Financial Goal Setting Session, Financial Planning Session, Investing Classes
+
+mar - Swedish Massage, Zero Balancing, Hypnosis, Yoga, Tai Chi, Qi Gong, Dance, Mindfulness Classes, Financial Goal Setting Session, Financial Wellbeing Coaching
+
+sep - Swedish Massage, Deep Tissue Massage, Chiropractic, Acupuncture, Cranial Sacral, Biofeedback Session, Shamanic Journey, Tai Chi, Qi Gong, Dance, Meditation Classes, Mindfulness Classes, Course in Miracles Groups, Conflict Resolution Classes, Relationship Communication Classes, Tantra, Parenting Classes, Welding, Acting Classes, Ceramics Classes, Investing Classes, Financial Planning Session, Financial Wellbeing Coaching
+"""
+
+for snap in event_snaps.split('\n'):
+  if len(snap.strip()) == 0: continue
+  parts = snap.split(' - ')
+  month = parts[0]
+  parts2 = [x.strip() for x in parts[1].split(',')]
+  for activity_name in parts2:
+    events.append((month, activity_name))
 
