@@ -4,8 +4,10 @@
 <form action="/search" method="POST">
 
 <p> I'm looking for something for... </p>
+
+<div id="searchy">
 {% for tagset in highlights %}
-  <p> {{ tagset.title }} </p>
+  <p><strong>{{ tagset.title }}</strong></p>
   <div class="btn-group tagset" data-toggle="buttons-checkbox">
     {% for tag in tagset.tags.all %}
       <button type="button" class="boxbtn btn" data-target="box-{{tagset.slug}}-{{tag.slug}}">{{tag.body}}</button>
@@ -14,6 +16,7 @@
   </div>
   <br/>
 {% endfor %}
+</div>
 
 <br/>
 <p><input type="submit" value="Search" /></p>
@@ -35,6 +38,9 @@
     });
   });
 </script>
+
+<hr/>
+<hr/>
 
 <div id="results" class="results">
 
