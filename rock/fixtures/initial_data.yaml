@@ -818,11 +818,241 @@
   fields:
     body: Age 40
     slug: age40
+- model: rock.tag
+  pk: 165
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 166
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 167
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 168
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 169
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 170
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 171
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 172
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 173
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 174
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 175
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 176
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 177
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 178
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 179
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 180
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 181
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 182
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 183
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 184
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 185
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 186
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 187
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 188
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 189
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 190
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 191
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 192
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 193
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 194
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 195
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 196
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 197
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 198
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 199
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 200
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 201
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 202
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 203
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 204
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 205
+  fields:
+    body: Age 60
+    slug: age60
+- model: rock.tag
+  pk: 206
+  fields:
+    body: Age 20
+    slug: age20
+- model: rock.tag
+  pk: 207
+  fields:
+    body: Age 30
+    slug: age30
+- model: rock.tag
+  pk: 208
+  fields:
+    body: Age 40
+    slug: age40
+- model: rock.tag
+  pk: 209
+  fields:
+    body: Age 50
+    slug: age50
+- model: rock.tag
+  pk: 210
+  fields:
+    body: Age 60
+    slug: age60
 - model: rock.tagset
   pk: 1
   fields:
     highlighted: True
-    tags: [162, 163, 164, 154, 155, 6]
+    tags: [206, 207, 208, 209, 210, 6]
     slug: age
     title: Age
 - model: rock.tagset
@@ -1070,6 +1300,76 @@
     tags: []
     slug: skydiving
     title: Sky Diving
+- model: rock.tagset
+  pk: 37
+  fields:
+    highlighted: False
+    tags: [10, 12, 15, 13, 14, 16]
+    slug: meditationclasses
+    title: Meditation Classes
+- model: rock.tagset
+  pk: 38
+  fields:
+    highlighted: False
+    tags: [10, 12, 15, 13, 14, 16]
+    slug: mindfulnessclasses
+    title: Mindfulness Classes
+- model: rock.tagset
+  pk: 39
+  fields:
+    highlighted: False
+    tags: [10]
+    slug: qigong
+    title: Qi Gong
+- model: rock.tagset
+  pk: 40
+  fields:
+    highlighted: False
+    tags: [10]
+    slug: taichi
+    title: Tai Chi
+- model: rock.tagset
+  pk: 41
+  fields:
+    highlighted: False
+    tags: [10, 12, 15, 13, 14, 16]
+    slug: courseinmiraclesgroups
+    title: Course in Miracles Groups
+- model: rock.tagset
+  pk: 42
+  fields:
+    highlighted: False
+    tags: [10, 12, 15, 13, 14, 16]
+    slug: prayergroups
+    title: Prayer Groups
+- model: rock.tagset
+  pk: 43
+  fields:
+    highlighted: False
+    tags: [10, 12, 15, 13, 14, 16]
+    slug: tantra
+    title: Tantra
+- model: rock.tagset
+  pk: 44
+  fields:
+    highlighted: False
+    tags: [10, 12, 15, 13, 14, 16]
+    slug: relationshipcommunicationclasses
+    title: Relationship Communication Classes
+- model: rock.tagset
+  pk: 45
+  fields:
+    highlighted: False
+    tags: [10, 12, 15, 13, 14, 16]
+    slug: conflictresolutionclasses
+    title: Conflict Resolution Classes
+- model: rock.tagset
+  pk: 46
+  fields:
+    highlighted: False
+    tags: [10, 12, 15, 13, 14, 16]
+    slug: parentingclasses
+    title: Parenting Classes
 - model: rock.activity
   pk: 1
   fields:
@@ -1187,14 +1487,14 @@
   fields:
     body:  Soft moving ancient movement art.
     slug: taichi
-    tag_set: 21
+    tag_set: 40
     title: Tai Chi
 - model: rock.activity
   pk: 18
   fields:
     body: Ancient elemental slow moving self moving energy work.
     slug: qigong
-    tag_set: 22
+    tag_set: 39
     title: Qi Gong
 - model: rock.activity
   pk: 19
@@ -1294,64 +1594,134 @@
     slug: skydiving
     tag_set: 36
     title: Sky Diving
+- model: rock.activity
+  pk: 33
+  fields:
+    body: Learn to sit through it.
+    slug: meditationclasses
+    tag_set: 37
+    title: Meditation Classes
+- model: rock.activity
+  pk: 34
+  fields:
+    body: Learn to sit through it and other techniques for careful living.
+    slug: mindfulnessclasses
+    tag_set: 38
+    title: Mindfulness Classes
+- model: rock.activity
+  pk: 35
+  fields:
+    body: Soft fluid moving meditation.
+    slug: qigong
+    tag_set: 39
+    title: Qi Gong
+- model: rock.activity
+  pk: 36
+  fields:
+    body: Soft fluid moving meditation often with animal forms.
+    slug: taichi
+    tag_set: 40
+    title: Tai Chi
+- model: rock.activity
+  pk: 37
+  fields:
+    body: Spiritual study group to deepen your forgiveness and align a graceful spirit.
+    slug: courseinmiraclesgroups
+    tag_set: 41
+    title: Course in Miracles Groups
+- model: rock.activity
+  pk: 38
+  fields:
+    body: Religious or non-religious conscious relating to the divine.
+    slug: prayergroups
+    tag_set: 42
+    title: Prayer Groups
+- model: rock.activity
+  pk: 39
+  fields:
+    body: Deep intimacy training moving through your fears and resistances to just being with one another and experience the acceptance and splendor of not having to do anything to feel accepted.
+    slug: tantra
+    tag_set: 43
+    title: Tantra
+- model: rock.activity
+  pk: 40
+  fields:
+    body: Refine re-build healthy tools for better relating.
+    slug: relationshipcommunicationclasses
+    tag_set: 44
+    title: Relationship Communication Classes
+- model: rock.activity
+  pk: 41
+  fields:
+    body: Dont just hide from confrontation learn how to effectively handle them.
+    slug: conflictresolutionclasses
+    tag_set: 45
+    title: Conflict Resolution Classes
+- model: rock.activity
+  pk: 42
+  fields:
+    body: Teach your children with love and compassion.
+    slug: parentingclasses
+    tag_set: 46
+    title: Parenting Classes
 - model: rock.event
   pk: 1
   fields:
-    activity: 17
+    activity: 36
     month: jan
 - model: rock.event
   pk: 2
   fields:
-    activity: 17
+    activity: 36
     month: feb
 - model: rock.event
   pk: 3
   fields:
-    activity: 17
+    activity: 36
     month: mar
 - model: rock.event
   pk: 4
   fields:
-    activity: 17
+    activity: 36
     month: apr
 - model: rock.event
   pk: 5
   fields:
-    activity: 17
+    activity: 36
     month: may
 - model: rock.event
   pk: 6
   fields:
-    activity: 17
+    activity: 36
     month: jun
 - model: rock.event
   pk: 7
   fields:
-    activity: 17
+    activity: 36
     month: jul
 - model: rock.event
   pk: 8
   fields:
-    activity: 17
+    activity: 36
     month: aug
 - model: rock.event
   pk: 9
   fields:
-    activity: 17
+    activity: 36
     month: sep
 - model: rock.event
   pk: 10
   fields:
-    activity: 17
+    activity: 36
     month: oct
 - model: rock.event
   pk: 11
   fields:
-    activity: 17
+    activity: 36
     month: nov
 - model: rock.event
   pk: 12
   fields:
-    activity: 17
+    activity: 36
     month: dec
 

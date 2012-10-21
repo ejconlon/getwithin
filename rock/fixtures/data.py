@@ -105,7 +105,29 @@ Surfing - age 20-40 - Ride the waves but dont forget your booties its coooold!
 Sky Diving - age 20-40 - Ever wonder what it feels like to risk your life by choice? Jump out and fly!
 """
 
-for snap in (snaps + snaps2).split('\n'):
+snaps3 = """\
+Meditation Classes - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Learn to sit through it.
+
+Mindfulness Classes - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Learn to sit through it and other techniques for careful living.
+
+Qi Gong - spirituality, age 40-60 - Soft fluid moving meditation.
+
+Tai Chi - spirituality, age 40-60 - Soft fluid moving meditation often with animal forms.
+
+Course in Miracles Groups - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Spiritual study group to deepen your forgiveness and align a graceful spirit.
+
+Prayer Groups - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Religious or non-religious conscious relating to the divine.
+
+Tantra - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Deep intimacy training moving through your fears and resistances to just being with one another and experience the acceptance and splendor of not having to do anything to feel accepted.
+
+Relationship Communication Classes - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Refine re-build healthy tools for better relating.
+
+Conflict Resolution Classes - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Dont just hide from confrontation learn how to effectively handle them.
+
+Parenting Classes - spirituality, age 20-60, injury, anniversary, pregnancy, menopause, under30 - Teach your children with love and compassion.
+"""
+
+for snap in (snaps + snaps2 + snaps3).split('\n'):
   if len(snap.strip()) == 0: continue
   parts = snap.split(' - ')
   title = parts[0]
